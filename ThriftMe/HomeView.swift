@@ -27,9 +27,18 @@ struct HomeView: View {
                         .foregroundColor(.white)
                         .cornerRadius(6)
                 }
+            }.padding(.horizontal)
+            
+            ScrollView(.vertical, showsIndicators: false) {
+                Image("welcome-banner")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                ListingCarousel(title: "Recommended For You")
+                ListingCarousel(title: "Your Favorites")
+                CategoryCarousel()
+                BrandCarousel()
+                ListingCarousel(title: "Other Listings")
             }
-            .padding(.horizontal)
-            Spacer()
         }
     }
 }

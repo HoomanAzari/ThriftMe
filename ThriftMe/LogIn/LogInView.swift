@@ -26,7 +26,7 @@ struct LogInView: View {
                 TextField("", text: $emailQuery)
                     .textFieldStyle(.roundedBorder)
                 Text("Password")
-                SecureInputView("Password", text: $viewModel.password)
+//                SecureInputView("Password", text: $viewModel.password)
                 TextField("", text: $emailQuery)
                     .textFieldStyle(.roundedBorder)
             }
