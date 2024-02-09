@@ -17,21 +17,13 @@ struct CategoryCarousel: View {
             }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 5) {
-                    Rectangle()
-                        .fill(Color.blue)
-                        .frame(width: 100, height: 100)
-                    Rectangle()
-                        .fill(Color.blue)
-                        .frame(width: 100, height: 100)
-                    Rectangle()
-                        .fill(Color.blue)
-                        .frame(width: 100, height: 100)
-                    Rectangle()
-                        .fill(Color.blue)
-                        .frame(width: 100, height: 100)
-                    Rectangle()
-                        .fill(Color.blue)
-                        .frame(width: 100, height: 100)
+                    CategoryItem(categoryName: "Tees", categoryImage: "tee-category-img")
+                    CategoryItem(categoryName: "Pants", categoryImage: "pants-category-img")
+                    CategoryItem(categoryName: "Dresses", categoryImage: "dress-category-img")
+                    CategoryItem(categoryName: "Jackets", categoryImage: "jacket-category-img")
+                    CategoryItem(categoryName: "Shoes", categoryImage: "shoes-category-img")
+                    CategoryItem(categoryName: "Headwear", categoryImage: "headwear-category-img")
+                    CategoryItem(categoryName: "Skirts", categoryImage: "skirt-category-img")
                 }
             }
         }.padding(.leading)

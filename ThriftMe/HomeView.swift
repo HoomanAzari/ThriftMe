@@ -12,7 +12,7 @@ struct HomeView: View {
     @State var query: String = ""
     // @FocusState var queryBoxFocused: Bool
     var body: some View {
-        VStack{
+        VStack {
             HStack{
                 TextField("What are you looking for?", text: $query)
                     .textFieldStyle(.roundedBorder)
@@ -33,11 +33,13 @@ struct HomeView: View {
                 Image("welcome-banner")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                ListingCarousel(title: "Recommended For You")
-                ListingCarousel(title: "Your Favorites")
-                CategoryCarousel()
-                BrandCarousel()
-                ListingCarousel(title: "Other Listings")
+                VStack(spacing: 35) {
+                    ListingCarousel(title: "Recommended For You")
+                    ListingCarousel(title: "Your Favorites")
+                    CategoryCarousel()
+                    BrandCarousel()
+                    ListingCarousel(title: "Other Listings")
+                }
             }
         }
     }
