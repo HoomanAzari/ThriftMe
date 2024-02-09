@@ -18,6 +18,8 @@
 		8A2DA5102B767FD4006B4D46 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA50F2B767FD4006B4D46 /* LogInView.swift */; };
 		8A2DA5172B768B06006B4D46 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA5162B768B06006B4D46 /* PasswordTextField.swift */; };
 		8A2DA5192B7690A0006B4D46 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA5182B7690A0006B4D46 /* WelcomeView.swift */; };
+		8A2DA51B2B7693A8006B4D46 /* WelcomeViewDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA51A2B7693A8006B4D46 /* WelcomeViewDetails.swift */; };
+		8A2DA51D2B76972C006B4D46 /* AuthenticationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA51C2B76972C006B4D46 /* AuthenticationPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		8A2DA50F2B767FD4006B4D46 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		8A2DA5162B768B06006B4D46 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		8A2DA5182B7690A0006B4D46 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		8A2DA51A2B7693A8006B4D46 /* WelcomeViewDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewDetails.swift; sourceTree = "<group>"; };
+		8A2DA51C2B76972C006B4D46 /* AuthenticationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				8A2DA5182B7690A0006B4D46 /* WelcomeView.swift */,
+				8A2DA51A2B7693A8006B4D46 /* WelcomeViewDetails.swift */,
+				8A2DA51C2B76972C006B4D46 /* AuthenticationPage.swift */,
 				8A2DA50F2B767FD4006B4D46 /* LogInView.swift */,
 				8A2DA5162B768B06006B4D46 /* PasswordTextField.swift */,
 			);
@@ -170,6 +176,8 @@
 				8A2DA5102B767FD4006B4D46 /* LogInView.swift in Sources */,
 				8A2DA50E2B767AC0006B4D46 /* AvatarView.swift in Sources */,
 				8A2DA50A2B766D5A006B4D46 /* HomeView.swift in Sources */,
+				8A2DA51B2B7693A8006B4D46 /* WelcomeViewDetails.swift in Sources */,
+				8A2DA51D2B76972C006B4D46 /* AuthenticationPage.swift in Sources */,
 				8A2DA5192B7690A0006B4D46 /* WelcomeView.swift in Sources */,
 				8A2DA50C2B766D88006B4D46 /* ProfileView.swift in Sources */,
 				8A2DA5062B766CEA006B4D46 /* MainView.swift in Sources */,
