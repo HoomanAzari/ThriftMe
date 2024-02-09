@@ -5,8 +5,6 @@
 //  Created by Houman Azari on 2024-02-09.
 //
 
-import SwiftUI
-
 //
 //  LogInView.swift
 //  ThriftMe
@@ -18,44 +16,74 @@ import SwiftUI
 
 struct SignUpView: View {
     
-    var bgColour : Color =  Color(red: 91/255, green: 189/255, blue: 130/255)
+    var bgColour: Color = Color(red: 91/255, green: 189/255, blue: 130/255)
     @State var emailQuery: String = ""
     @State var passwordQuery: String = ""
+    @State var userNameQuery: String = ""
     
     var body: some View {
         NavigationStack {
-            VStack {
-                HStack {
-                    Text("Login")
-                        .font(.largeTitle)
-                        .padding(.horizontal)
-                    Spacer()
-                }
+            ZStack {
+                bgColour.edgesIgnoringSafeArea(.all) // Set the background color for the entire screen
+                
                 VStack {
-                    Text("Email")
-                    TextField("", text: $emailQuery)
-                        .textFieldStyle(.roundedBorder)
-                    Text("Password")
-                    PasswordTextFieldView("", text: $passwordQuery)
-                    NavigationLink {
-                        MainView()
-                    } label: {
-                        Text("Next")
-                            .foregroundColor(.white)
-                            .padding()
-                            .background(Color.blue)
-                            .cornerRadius(8)
+                    HStack {
+                        Text("Sign")
+                        Text("Up")
+                            .padding(.leading, -8)
+                            .foregroundStyle(Color(red: 191/255, green: 255/255, blue: 218/255))
                     }
-                    .padding()
+                    .font(.system(size: 80))
+                    .bold()
+                    .foregroundStyle(Color.white)
+                    .padding(.bottom, 50)
+                    
+                    VStack {
+                        Text("Username")
+                            .foregroundStyle(Color.white)
+                            .bold()
+                        TextField("", text: $userNameQuery)
+                            .textFieldStyle(.roundedBorder)
+                            .padding(.bottom, 35)
+                        
+                        Text("Email")
+                            .foregroundStyle(Color.white)
+                            .bold()
+                        TextField("", text: $emailQuery)
+                            .textFieldStyle(.roundedBorder)
+                            .padding(.bottom, 35)
+                        
+                        Text("Password")
+                            .foregroundStyle(Color.white)
+                            .bold()
+                        PasswordTextFieldView("", text: $passwordQuery)
+                            .padding(.bottom, 20)
+                        
+                        NavigationLink {
+                            MainView()
+                        } label: {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 15)
+                                    .foregroundStyle(Color.white)
+                                    .frame(height: 40)
+                                Text("Join Now")
+                                    .foregroundStyle(Color(red: 17/255, green: 134/255, blue: 119/255))
+                            }
+                        }
+                        .padding(.horizontal, 70)
+                        .padding()
+                    }
+                    .padding(.horizontal, 50)
                 }
-                .padding(.horizontal)
             }
         }
-        .background(bgColour)
         .navigationBarHidden(true) // Hide the navigation bar on this view
-        Spacer()
     }
 }
 
 
-
+struct SignUp_Previews: PreviewProvider {
+    static var previews: some View {
+        SignUpView()
+    }
+}
