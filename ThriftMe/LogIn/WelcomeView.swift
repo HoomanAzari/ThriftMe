@@ -13,7 +13,7 @@ struct WelcomeView: View {
                 Color(red: 139/255, green: 166/255, blue: 65/255)
             }
             else {
-                Color(.orange)
+                Color(red: 227/255, green: 188/225, blue: 208/255)
             }
             
             TabView(selection: $selectedViewIndex) {
@@ -33,9 +33,7 @@ struct WelcomeView: View {
                 .tag(1)
                 .ignoresSafeArea()
                 
-                AuthenticationPage {
-                    dismiss()
-                }
+                AuthenticationPage()
                 .tag(2)
                 .ignoresSafeArea()
             }

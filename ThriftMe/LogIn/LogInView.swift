@@ -11,7 +11,9 @@ struct LogInView: View {
     
     @State var emailQuery: String = ""
     @State var passwordQuery: String = ""
-    
+    @Binding var isLoginViewPresented: Bool
+    @Environment(\.dismiss) var dismiss
+ 
     var body: some View {
         VStack {
             HStack{
@@ -26,6 +28,17 @@ struct LogInView: View {
                     .textFieldStyle(.roundedBorder)
                 Text("Password")
                 PasswordTextFieldView("", text: $passwordQuery)
+                Button(action: {
+                    isLoginViewPresented = false
+                }) {
+                    Text("Next")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(8)
+                    
+                }
+                .padding()
             }
             .padding(.horizontal)
         }
@@ -33,7 +46,5 @@ struct LogInView: View {
     }
 }
 
-#Preview {
-    LogInView()
-}
+
 
