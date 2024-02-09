@@ -16,10 +16,8 @@ struct BrandCarousel: View {
                 Spacer()
             }
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 5) {
-                    Rectangle()
-                        .fill(Color.green)
-                        .frame(width: 145, height: 100)
+                HStack {
+                    BrandItem(brandName: "Nike", brandImage: "nike-logo")
                     Rectangle()
                         .fill(Color.green)
                         .frame(width: 145, height: 100)
