@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct ThriftMeApp: App {
+    
+    @AppStorage("Login") var needsLogIn = true
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .fullScreenCover(isPresented: $needsLogIn){
+                    // On dismiss action
+                    needsLogIn = false
+                } content: {
+                    LogInView()
+                }
         }
     }
 }
