@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A8C5BB12B76DB0600619FE9 /* ListingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BB02B76DB0600619FE9 /* ListingItem.swift */; };
+		5A8C5BB32B76DB0B00619FE9 /* ListingCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BB22B76DB0B00619FE9 /* ListingCarousel.swift */; };
+		5A8C5BB52B76DB1200619FE9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BB42B76DB1200619FE9 /* HomeView.swift */; };
+		5A8C5BB72B76DB1500619FE9 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BB62B76DB1500619FE9 /* CategoryItem.swift */; };
+		5A8C5BB92B76DB1800619FE9 /* CategoryCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BB82B76DB1800619FE9 /* CategoryCarousel.swift */; };
+		5A8C5BBB2B76DB1C00619FE9 /* BrandItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BBA2B76DB1C00619FE9 /* BrandItem.swift */; };
+		5A8C5BBD2B76DB2000619FE9 /* BrandCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BBC2B76DB2000619FE9 /* BrandCarousel.swift */; };
+		5A8C5BBF2B76DB6400619FE9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BBE2B76DB6400619FE9 /* Color.swift */; };
 		8A2DA4F82B766C7D006B4D46 /* ThriftMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA4F72B766C7D006B4D46 /* ThriftMeApp.swift */; };
 		8A2DA4FC2B766C7E006B4D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2DA4FB2B766C7E006B4D46 /* Assets.xcassets */; };
 		8A2DA4FF2B766C7E006B4D46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2DA4FE2B766C7E006B4D46 /* Preview Assets.xcassets */; };
 		8A2DA5062B766CEA006B4D46 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA5052B766CEA006B4D46 /* MainView.swift */; };
 		8A2DA5082B766D29006B4D46 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA5072B766D29006B4D46 /* ChatView.swift */; };
-		8A2DA50A2B766D5A006B4D46 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA5092B766D5A006B4D46 /* HomeView.swift */; };
 		8A2DA50C2B766D88006B4D46 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA50B2B766D88006B4D46 /* ProfileView.swift */; };
 		8A2DA50E2B767AC0006B4D46 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA50D2B767AC0006B4D46 /* AvatarView.swift */; };
 		8A2DA5102B767FD4006B4D46 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA50F2B767FD4006B4D46 /* LogInView.swift */; };
@@ -22,13 +29,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A8C5BB02B76DB0600619FE9 /* ListingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingItem.swift; sourceTree = "<group>"; };
+		5A8C5BB22B76DB0B00619FE9 /* ListingCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingCarousel.swift; sourceTree = "<group>"; };
+		5A8C5BB42B76DB1200619FE9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5A8C5BB62B76DB1500619FE9 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		5A8C5BB82B76DB1800619FE9 /* CategoryCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCarousel.swift; sourceTree = "<group>"; };
+		5A8C5BBA2B76DB1C00619FE9 /* BrandItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandItem.swift; sourceTree = "<group>"; };
+		5A8C5BBC2B76DB2000619FE9 /* BrandCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCarousel.swift; sourceTree = "<group>"; };
+		5A8C5BBE2B76DB6400619FE9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		8A2DA4F42B766C7D006B4D46 /* ThriftMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThriftMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2DA4F72B766C7D006B4D46 /* ThriftMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriftMeApp.swift; sourceTree = "<group>"; };
 		8A2DA4FB2B766C7E006B4D46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A2DA4FE2B766C7E006B4D46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A2DA5052B766CEA006B4D46 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8A2DA5072B766D29006B4D46 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
-		8A2DA5092B766D5A006B4D46 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8A2DA50B2B766D88006B4D46 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		8A2DA50D2B767AC0006B4D46 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		8A2DA50F2B767FD4006B4D46 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
@@ -48,6 +62,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A8C5BAD2B76DAB100619FE9 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				5A8C5BBC2B76DB2000619FE9 /* BrandCarousel.swift */,
+				5A8C5BBA2B76DB1C00619FE9 /* BrandItem.swift */,
+				5A8C5BB82B76DB1800619FE9 /* CategoryCarousel.swift */,
+				5A8C5BB62B76DB1500619FE9 /* CategoryItem.swift */,
+				5A8C5BB42B76DB1200619FE9 /* HomeView.swift */,
+				5A8C5BB22B76DB0B00619FE9 /* ListingCarousel.swift */,
+				5A8C5BB02B76DB0600619FE9 /* ListingItem.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
 		8A2DA4EB2B766C7D006B4D46 = {
 			isa = PBXGroup;
 			children = (
@@ -70,12 +98,13 @@
 				8A2DA4F72B766C7D006B4D46 /* ThriftMeApp.swift */,
 				8A2DA5112B768143006B4D46 /* LogIn */,
 				8A2DA5052B766CEA006B4D46 /* MainView.swift */,
-				8A2DA5092B766D5A006B4D46 /* HomeView.swift */,
+				5A8C5BAD2B76DAB100619FE9 /* HomeView */,
 				8A2DA50D2B767AC0006B4D46 /* AvatarView.swift */,
 				8A2DA5072B766D29006B4D46 /* ChatView.swift */,
 				8A2DA50B2B766D88006B4D46 /* ProfileView.swift */,
 				8A2DA4FB2B766C7E006B4D46 /* Assets.xcassets */,
 				8A2DA4FD2B766C7E006B4D46 /* Preview Content */,
+				5A8C5BBE2B76DB6400619FE9 /* Color.swift */,
 			);
 			path = ThriftMe;
 			sourceTree = "<group>";
@@ -169,14 +198,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A8C5BBB2B76DB1C00619FE9 /* BrandItem.swift in Sources */,
 				8A2DA5082B766D29006B4D46 /* ChatView.swift in Sources */,
 				8A2DA5102B767FD4006B4D46 /* LogInView.swift in Sources */,
+				5A8C5BBD2B76DB2000619FE9 /* BrandCarousel.swift in Sources */,
 				8A2DA50E2B767AC0006B4D46 /* AvatarView.swift in Sources */,
-				8A2DA50A2B766D5A006B4D46 /* HomeView.swift in Sources */,
+				5A8C5BB92B76DB1800619FE9 /* CategoryCarousel.swift in Sources */,
 				8A2DA5192B7690A0006B4D46 /* WelcomeView.swift in Sources */,
 				8A2DA50C2B766D88006B4D46 /* ProfileView.swift in Sources */,
+				5A8C5BBF2B76DB6400619FE9 /* Color.swift in Sources */,
 				8A2DA51F2B76D416006B4D46 /* SignUpView.swift in Sources */,
 				8A2DA5062B766CEA006B4D46 /* MainView.swift in Sources */,
+				5A8C5BB32B76DB0B00619FE9 /* ListingCarousel.swift in Sources */,
+				5A8C5BB72B76DB1500619FE9 /* CategoryItem.swift in Sources */,
+				5A8C5BB12B76DB0600619FE9 /* ListingItem.swift in Sources */,
+				5A8C5BB52B76DB1200619FE9 /* HomeView.swift in Sources */,
 				8A2DA5172B768B06006B4D46 /* PasswordTextField.swift in Sources */,
 				8A2DA4F82B766C7D006B4D46 /* ThriftMeApp.swift in Sources */,
 			);
