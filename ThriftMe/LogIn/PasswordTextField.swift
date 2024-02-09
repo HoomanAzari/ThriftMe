@@ -1,5 +1,5 @@
 //
-//  SecurePassword.swift
+//  PasswordTextField.swift
 //  ThriftMe
 //
 //  Created by Houman Azari on 2024-02-09.
@@ -7,11 +7,12 @@
 
 import SwiftUI
 
-struct SecureInputView: View {
+struct PasswordTextFieldView: View {
     
     @Binding private var text: String
     @State private var isSecured: Bool = true
     private var title: String
+    @State var passworQuery: String = ""
     
     init(_ title: String, text: Binding<String>) {
         self.title = title
@@ -23,8 +24,10 @@ struct SecureInputView: View {
             Group {
                 if isSecured {
                     SecureField(title, text: $text)
+                        .textFieldStyle(.roundedBorder)
                 } else {
                     TextField(title, text: $text)
+                        .textFieldStyle(.roundedBorder)
                 }
             }.padding(.trailing, 32)
 

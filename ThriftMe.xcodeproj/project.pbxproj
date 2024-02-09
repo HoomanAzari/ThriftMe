@@ -16,7 +16,8 @@
 		8A2DA50C2B766D88006B4D46 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA50B2B766D88006B4D46 /* ProfileView.swift */; };
 		8A2DA50E2B767AC0006B4D46 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA50D2B767AC0006B4D46 /* AvatarView.swift */; };
 		8A2DA5102B767FD4006B4D46 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA50F2B767FD4006B4D46 /* LogInView.swift */; };
-		8A2DA5152B7684A8006B4D46 /* SecureInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA5142B7684A8006B4D46 /* SecureInputView.swift */; };
+		8A2DA5172B768B06006B4D46 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA5162B768B06006B4D46 /* PasswordTextField.swift */; };
+		8A2DA5192B7690A0006B4D46 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA5182B7690A0006B4D46 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +31,8 @@
 		8A2DA50B2B766D88006B4D46 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		8A2DA50D2B767AC0006B4D46 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		8A2DA50F2B767FD4006B4D46 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
-		8A2DA5142B7684A8006B4D46 /* SecureInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureInputView.swift; sourceTree = "<group>"; };
+		8A2DA5162B768B06006B4D46 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		8A2DA5182B7690A0006B4D46 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +89,9 @@
 		8A2DA5112B768143006B4D46 /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
+				8A2DA5182B7690A0006B4D46 /* WelcomeView.swift */,
 				8A2DA50F2B767FD4006B4D46 /* LogInView.swift */,
-				8A2DA5142B7684A8006B4D46 /* SecureInputView.swift */,
+				8A2DA5162B768B06006B4D46 /* PasswordTextField.swift */,
 			);
 			path = LogIn;
 			sourceTree = "<group>";
@@ -164,12 +167,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A2DA5082B766D29006B4D46 /* ChatView.swift in Sources */,
-				8A2DA5152B7684A8006B4D46 /* SecureInputView.swift in Sources */,
 				8A2DA5102B767FD4006B4D46 /* LogInView.swift in Sources */,
 				8A2DA50E2B767AC0006B4D46 /* AvatarView.swift in Sources */,
 				8A2DA50A2B766D5A006B4D46 /* HomeView.swift in Sources */,
+				8A2DA5192B7690A0006B4D46 /* WelcomeView.swift in Sources */,
 				8A2DA50C2B766D88006B4D46 /* ProfileView.swift in Sources */,
 				8A2DA5062B766CEA006B4D46 /* MainView.swift in Sources */,
+				8A2DA5172B768B06006B4D46 /* PasswordTextField.swift in Sources */,
 				8A2DA4F82B766C7D006B4D46 /* ThriftMeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

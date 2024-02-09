@@ -20,21 +20,20 @@ struct LogInView: View {
                     .padding(.horizontal)
                 Spacer()
             }
-            Spacer()
             VStack{
                 Text("Email")
                 TextField("", text: $emailQuery)
                     .textFieldStyle(.roundedBorder)
                 Text("Password")
-                SecureInputView("Password", text: $viewModel.password)
-                TextField("", text: $emailQuery)
-                    .textFieldStyle(.roundedBorder)
+                PasswordTextFieldView("", text: $passwordQuery)
             }
             .padding(.horizontal)
         }
+        Spacer()
     }
 }
 
 #Preview {
     LogInView()
 }
+

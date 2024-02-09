@@ -10,15 +10,15 @@ import SwiftUI
 @main
 struct ThriftMeApp: App {
     
-    @AppStorage("Login") var needsLogIn = true
+    @AppStorage("Login") var needsWelcome = true
     var body: some Scene {
         WindowGroup {
             MainView()
-                .fullScreenCover(isPresented: $needsLogIn){
+                .fullScreenCover(isPresented: $needsWelcome){
                     // On dismiss action
-                    needsLogIn = false
+                    needsWelcome = false
                 } content: {
-                    LogInView()
+                    WelcomeView()
                 }
         }
     }
