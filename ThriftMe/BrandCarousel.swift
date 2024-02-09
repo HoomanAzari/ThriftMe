@@ -10,26 +10,18 @@ import SwiftUI
 struct BrandCarousel: View {
     var body: some View {
         VStack() {
-            HStack() {
+            HStack {
                 Text("Popular Brands")
                     .bold()
                 Spacer()
             }
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
+                HStack(spacing: 5) {
                     BrandItem(brandName: "Nike", brandImage: "nike-logo")
-                    Rectangle()
-                        .fill(Color.green)
-                        .frame(width: 145, height: 100)
-                    Rectangle()
-                        .fill(Color.green)
-                        .frame(width: 145, height: 100)
-                    Rectangle()
-                        .fill(Color.green)
-                        .frame(width: 145, height: 100)
-                    Rectangle()
-                        .fill(Color.green)
-                        .frame(width: 145, height: 100)
+                    BrandItem(brandName: "The North Face", brandImage: "the-north-face-logo")
+                    BrandItem(brandName: "Patagonia", brandImage: "patagonia-logo")
+                    BrandItem(brandName: "Adidas", brandImage: "adidas-logo")
+                    BrandItem(brandName: "New Balance", brandImage: "new-balance-logo")
                 }
             }
         }.padding(.leading)

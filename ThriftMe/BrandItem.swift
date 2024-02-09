@@ -18,7 +18,7 @@ struct BrandItem: View {
                 .frame(width: 145, height: 80)
                 .clipped()
             Text(brandName)
-                .font(.system(size: 15))
+                .font(.system(size: 12))
                 .padding(.bottom, 2)
                 .padding(.top, -5)
         }.frame(width: 145, height: 100)

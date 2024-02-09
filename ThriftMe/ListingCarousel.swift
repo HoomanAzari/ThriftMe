@@ -18,9 +18,14 @@ struct ListingCarousel: View {
             }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 5) {
+                    
+                    
                     Rectangle()
                         .fill(Color.red)
                         .frame(width: 135, height: 135)
+                    
+                    
+                    
                     Rectangle()
                         .fill(Color.red)
                         .frame(width: 135, height: 135)
