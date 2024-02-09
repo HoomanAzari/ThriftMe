@@ -1,4 +1,13 @@
 //
+//  SignUpView.swift
+//  ThriftMe
+//
+//  Created by Houman Azari on 2024-02-09.
+//
+
+import SwiftUI
+
+//
 //  LogInView.swift
 //  ThriftMe
 //
@@ -7,7 +16,7 @@
 
 import SwiftUI
 
-struct LogInView: View {
+struct SignUpView: View {
     
     var bgColour : Color =  Color(red: 91/255, green: 189/255, blue: 130/255)
     @State var emailQuery: String = ""
@@ -47,5 +56,6 @@ struct LogInView: View {
         Spacer()
     }
 }
+
 
 

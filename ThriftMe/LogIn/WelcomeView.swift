@@ -1,67 +1,70 @@
 import SwiftUI
 
 struct WelcomeView: View {
-    @Environment(\.dismiss) var dismiss
-    @State var selectedViewIndex = 0
-
+    var bgColour : Color =  Color(red: 91/255, green: 189/255, blue: 130/255)
     var body: some View {
-        ZStack {
-            if selectedViewIndex == 0 {
-                Color(red: 111/255, green: 154/255, blue: 189/255)
-            }
-            else if selectedViewIndex == 1 {
-                Color(red: 139/255, green: 166/255, blue: 65/255)
-            }
-            else {
-                Color(red: 227/255, green: 188/225, blue: 208/255)
-            }
-            
-            TabView(selection: $selectedViewIndex) {
-                WelcomeViewDetails(bgColor: Color(red: 111/255, green: 154/255, blue: 189/255), headline: "Welcome to ThriftMe", subHeadline: "ThriftMe helps you shop for clothes sustainably!") {
-                    withAnimation{
-                        selectedViewIndex = 1
-                    }
-                }
-                .tag(0)
-                .ignoresSafeArea()
-                
-                WelcomeViewDetails(bgColor: Color(red: 139/255, green: 166/255, blue: 65/255), headline: "Discover ", subHeadline: "We'll help you shop for clothes that fit you perfectly!") {
-                    withAnimation{
-                        selectedViewIndex = 2
-                    }
-                }
-                .tag(1)
-                .ignoresSafeArea()
-                
-                AuthenticationPage()
-                .tag(2)
-                .ignoresSafeArea()
-            }
-            .tabViewStyle(.page(indexDisplayMode: .never))
-            
+        NavigationView {
             VStack {
                 Spacer()
-                HStack (spacing: 16) {
-                    Spacer()
-                    Circle()
-                        .frame(width: 10)
-                        .foregroundColor(selectedViewIndex == 0 ? .white: .gray)
-                    Circle()
-                        .frame(width: 10)
-                        .foregroundColor(selectedViewIndex == 1 ? .white: .gray)
-                    Circle()
-                        .frame(width: 10)
-                        .foregroundColor(selectedViewIndex == 2 ? .white: .gray)
-                    Spacer()
+                Image("WelcomeImage") //
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 400, height: 200)
+                    .padding(.bottom, 40)
+                    .padding(.top, 60)
+                
+                HStack{
+                    Text("Thrift")
+                    Text("Me")
+                        .padding(.leading, -8)
+                        .foregroundStyle(Color(red: 191/255, green: 255/255, blue: 218/255))
                 }
-                .padding(.bottom, 220)
+                .font(.system(size: 80))
+                .bold()
+                .foregroundStyle(Color.white)
+            
+                
+                Text("Shop for clothes in a safe and sustainable way")
+                    .font(.footnote)
+                    .italic()
+                    .foregroundStyle(Color.white)
+                    
+                    
+                Spacer()
+                
+                NavigationLink(destination: SignUpView()) {
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 15)
+                            .foregroundStyle(Color.white)
+                            .frame(height: 40)
+                        Text("Join Now")
+                            .foregroundStyle(Color(red: 17/255, green: 134/255, blue: 119/255))
+                    }
+                }
+                .padding(.top, 100)
+                .padding(.horizontal, 30)
+                
+                HStack {
+                    Text("Already have an account?")
+                        .foregroundStyle(.white)
+                    NavigationLink(destination: LogInView()) {
+                        Text("Login")
+                            .foregroundStyle(Color.white)
+                            .bold()
+                            .underline()
+                    }
+                }
+                .padding(.top, 10)
+                
+                Spacer()
             }
+            .background(bgColour)
+            .ignoresSafeArea()
         }
-        .ignoresSafeArea()
     }
 }
 
-struct WelcomeView_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         WelcomeView()
     }
