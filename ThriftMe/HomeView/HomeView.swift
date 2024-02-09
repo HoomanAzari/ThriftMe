@@ -33,7 +33,7 @@ struct HomeView: View {
                 Image("welcome-banner")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                VStack(spacing: 35) {
+                VStack(spacing: 15) {
                     ListingCarousel(title: "Recommended For You")
                     ListingCarousel(title: "Your Favorites")
                     CategoryCarousel()
