@@ -35,7 +35,7 @@ struct MainView: View {
                         }
                     }
                 
-                ProfileView()
+                AccountView()
                     .tabItem {
                         VStack{
                             Image(systemName: "person.crop.circle")
