@@ -22,14 +22,14 @@ struct ChatView: View {
                         // Some action
                     } label: {
                         HStack {
-                            Image("Sami")
+                            Image("p18")
                                 .resizable()
                                 .foregroundColor(.black)
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: 50, height: 60)
                                 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                             VStack(alignment: .leading) {
-                                Text("Sami Tabibi")
+                                Text("ImSami")
                                     .font(.system(size: 22))
                                     .foregroundColor(.black)
                                     .bold()
@@ -51,14 +51,14 @@ struct ChatView: View {
                         // Some action
                     } label: {
                         HStack {
-                            Image("Sam")
+                            Image("p18")
                                 .resizable()
                                 .foregroundColor(.black)
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: 50, height: 60)
                                 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                             VStack(alignment: .leading) {
-                                Text("Alice Dubois")
+                                Text("alice_dubois")
                                     .font(.system(size: 22))
                                     .foregroundColor(.black)
                                     .bold()
@@ -81,18 +81,18 @@ struct ChatView: View {
                             // Some action
                         } label: {
                             HStack {
-                                Image("jacket-category-img")
+                                Image("p1")
                                     .resizable()
                                     .foregroundColor(.black)
                                     .aspectRatio(contentMode: .fill)
                                     .frame(width: 50, height: 60)
                                     .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                                 VStack(alignment: .leading) {
-                                    Text("John Doe")
+                                    Text("al3jandro")
                                         .font(.system(size: 22))
                                         .foregroundColor(.black)
                                         .bold()
-                                    Text("How long have you had the jacket for?")
+                                    Text("How much do you love spiderman?")
                                         .font(.system(size: 16))
                                         .foregroundColor(.gray)
                                         .lineLimit(1)
