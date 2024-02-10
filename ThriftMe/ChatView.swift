@@ -81,7 +81,7 @@ struct ChatView: View {
                             // Some action
                         } label: {
                             HStack {
-                                Image("p7")
+                                Image("p1")
                                     .resizable()
                                     .foregroundColor(.black)
                                     .aspectRatio(contentMode: .fill)
@@ -92,7 +92,7 @@ struct ChatView: View {
                                         .font(.system(size: 22))
                                         .foregroundColor(.black)
                                         .bold()
-                                    Text("How long have you had the jacket for?")
+                                    Text("How much do you love spiderman?")
                                         .font(.system(size: 16))
                                         .foregroundColor(.gray)
                                         .lineLimit(1)
