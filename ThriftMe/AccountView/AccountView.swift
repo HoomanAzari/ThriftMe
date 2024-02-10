@@ -17,7 +17,7 @@ struct AccountView: View {
                 .padding(.bottom, 25)
             ScrollView{
                 VStack {
-                    AccountButton(iconName: "person", title: "Profile", description: "Username, email, and password")
+                    AccountButton(iconName: "person", title: "Profile", description: "Your seller/buyer profile")
                     Divider()
                     AccountButton(iconName: "mappin.and.ellipse", title: "Location", description: "Country, city, and currency")
                     Divider()
