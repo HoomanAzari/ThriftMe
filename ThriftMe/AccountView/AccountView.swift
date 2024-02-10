@@ -15,23 +15,31 @@ struct AccountView: View {
                 .bold()
                 .padding(.bottom, 25)
             VStack {
+                AccountButton(iconName: "person", title: "Profile", description: "Username, Email, Password")
+                Divider()
+                AccountButton(iconName: "mappin.and.ellipse", title: "Location", description: "Country, City, and Currency")
+                Divider()
+                AccountButton(iconName: "list.bullet", title: "My Listings", description: "Active sales")
+                Divider()
+                AccountButton(iconName: "heart", title: "My Favorites", description: "Items you've saved")
+                Divider()
+                AccountButton(iconName: "gearshape", title: "Settings", description: "Security and notifications")
+                Divider()
                 Button {
                     // Some action
                 } label: {
                     HStack {
-                        Image(systemName: "person")
+                        Image(systemName: "rectangle.portrait.and.arrow.forward")
                             .resizable()
                             .foregroundColor(.black)
                             .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                             .frame(width: 25, height: 25)
+                            .padding(.leading, 5)
                         VStack(alignment: .leading) {
-                            Text("Profile")
+                            Text("Logout")
                                 .font(.system(size: 22))
                                 .foregroundColor(.black)
                                 .bold()
-                            Text("Name, Username, Email, Password")
-                                .font(.system(size: 16))
-                                .foregroundColor(.gray)
                         }.padding(.leading, 10)
                         Spacer()
                         Image(systemName: "arrow.right")
@@ -39,7 +47,7 @@ struct AccountView: View {
                             .foregroundColor(.gray)
                             .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                             .frame(width: 15, height: 15)
-                    }
+                    }.frame(height: 45)
                 }
                 Divider()
             }
