@@ -18,13 +18,10 @@ struct InventoryCarousel: View {
             }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 5) {
-                    InventoryItem(listingImage: "jacket-category-img", listingTitle: "Blue jean jacket with side pockets")
-                    InventoryItem(listingImage: "jacket-category-img", listingTitle: "Blue jean jacket with side pockets")
-                    InventoryItem(listingImage: "jacket-category-img", listingTitle: "Blue jean jacket with side pockets")
-                    InventoryItem(listingImage: "jacket-category-img", listingTitle: "Blue jean jacket with side pockets")
-                    InventoryItem(listingImage: "jacket-category-img", listingTitle: "Blue jean jacket with side pockets")
-                    InventoryItem(listingImage: "jacket-category-img", listingTitle: "Blue jean jacket with side pockets")
-                    InventoryItem(listingImage: "jacket-category-img", listingTitle: "Blue jean jacket with side pockets")
+                    InventoryItem(listingImage: "saved-outfit-1", listingTitle: "Saved Outfit #1")
+                    InventoryItem(listingImage: "saved-outfit-1", listingTitle: "Saved Outfit #2")
+                    InventoryItem(listingImage: "saved-outfit-1", listingTitle: "Saved Outfit #3")
+                    InventoryItem(listingImage: "saved-outfit-1", listingTitle: "Saved Outfit #4")
                 }
             }
         }.padding(.leading)
@@ -32,5 +29,5 @@ struct InventoryCarousel: View {
 }
 
 #Preview {
-    InventoryCarousel(title: "Tops")
+    InventoryCarousel(title: "Saved Outfits")
 }

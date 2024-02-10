@@ -9,7 +9,7 @@ import SwiftUI
 import SceneKit
 
 struct AvatarView: View {
-    @State var models = [Model(id: 0, name: "chiffon-dress", modelName: "dress.usdz")]
+    @State var models = [Model(id: 0, name: "bro", modelName: "bald.usdz")]
     @State var index = 0
     var body: some View {
         VStack(alignment: .leading) {
@@ -25,8 +25,7 @@ struct AvatarView: View {
                     Text("Model not found")
                         .foregroundColor(.red)
                 }
-                InventoryCarousel(title: "Tops")
-                InventoryCarousel(title: "Bottoms")
+                InventoryCarousel(title: "Saved Outfits")
             }
         }.padding(.all)
     }

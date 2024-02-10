@@ -20,6 +20,9 @@
 		5A8C5BC72B770A6C00619FE9 /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BC62B770A6C00619FE9 /* InventoryItem.swift */; };
 		5A8C5BCA2B770F3A00619FE9 /* dress.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A8C5BC92B770F3900619FE9 /* dress.usdz */; };
 		5A8C5BCD2B770F8700619FE9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BCC2B770F8700619FE9 /* Model.swift */; };
+		5A8C5BD12B7719B600619FE9 /* bald.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A8C5BD02B7719B500619FE9 /* bald.usdz */; };
+		5A8C5BD32B771B9500619FE9 /* hulk.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A8C5BD22B771B9500619FE9 /* hulk.usdz */; };
+		5A8C5BD52B771DF500619FE9 /* woman1999.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A8C5BD42B771DF500619FE9 /* woman1999.usdz */; };
 		8A2DA4F82B766C7D006B4D46 /* ThriftMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA4F72B766C7D006B4D46 /* ThriftMeApp.swift */; };
 		8A2DA4FC2B766C7E006B4D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2DA4FB2B766C7E006B4D46 /* Assets.xcassets */; };
 		8A2DA4FF2B766C7E006B4D46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2DA4FE2B766C7E006B4D46 /* Preview Assets.xcassets */; };
@@ -47,6 +50,9 @@
 		5A8C5BC62B770A6C00619FE9 /* InventoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItem.swift; sourceTree = "<group>"; };
 		5A8C5BC92B770F3900619FE9 /* dress.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = dress.usdz; sourceTree = "<group>"; };
 		5A8C5BCC2B770F8700619FE9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5A8C5BD02B7719B500619FE9 /* bald.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = bald.usdz; sourceTree = "<group>"; };
+		5A8C5BD22B771B9500619FE9 /* hulk.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = hulk.usdz; sourceTree = "<group>"; };
+		5A8C5BD42B771DF500619FE9 /* woman1999.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = woman1999.usdz; sourceTree = "<group>"; };
 		8A2DA4F42B766C7D006B4D46 /* ThriftMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThriftMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2DA4F72B766C7D006B4D46 /* ThriftMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriftMeApp.swift; sourceTree = "<group>"; };
 		8A2DA4FB2B766C7E006B4D46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +123,9 @@
 		5A8C5BCB2B770F5400619FE9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5A8C5BD42B771DF500619FE9 /* woman1999.usdz */,
+				5A8C5BD22B771B9500619FE9 /* hulk.usdz */,
+				5A8C5BD02B7719B500619FE9 /* bald.usdz */,
 				5A8C5BC92B770F3900619FE9 /* dress.usdz */,
 			);
 			path = Models;
@@ -233,9 +242,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A8C5BD52B771DF500619FE9 /* woman1999.usdz in Resources */,
+				5A8C5BD12B7719B600619FE9 /* bald.usdz in Resources */,
 				5A8C5BCA2B770F3A00619FE9 /* dress.usdz in Resources */,
 				8A2DA4FF2B766C7E006B4D46 /* Preview Assets.xcassets in Resources */,
 				8A2DA4FC2B766C7E006B4D46 /* Assets.xcassets in Resources */,
+				5A8C5BD32B771B9500619FE9 /* hulk.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
