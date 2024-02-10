@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import SceneKit
 
 struct AvatarView: View {
+    @State var models = [Model(id: 0, name: "chiffon-dress", modelName: "dress.usdz")]
+    @State var index = 0
     var body: some View {
         VStack(alignment: .leading) {
             Text("Avatar")
@@ -15,8 +18,13 @@ struct AvatarView: View {
                 .bold()
                 .padding(.bottom, 25)
             ScrollView(showsIndicators: false) {
-                Rectangle()
-                    .frame(height: 450)
+                if let modelName = models.first?.modelName {
+                    SceneView(scene: SCNScene(named: modelName), options: [.autoenablesDefaultLighting, .allowsCameraControl])
+                        .frame(height: 450)
+                } else {
+                    Text("Model not found")
+                        .foregroundColor(.red)
+                }
                 InventoryCarousel(title: "Tops")
                 InventoryCarousel(title: "Bottoms")
             }

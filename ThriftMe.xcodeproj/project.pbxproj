@@ -18,6 +18,8 @@
 		5A8C5BC22B76F5BA00619FE9 /* AccountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BC12B76F5BA00619FE9 /* AccountButton.swift */; };
 		5A8C5BC42B770A0B00619FE9 /* InventoryCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BC32B770A0B00619FE9 /* InventoryCarousel.swift */; };
 		5A8C5BC72B770A6C00619FE9 /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BC62B770A6C00619FE9 /* InventoryItem.swift */; };
+		5A8C5BCA2B770F3A00619FE9 /* dress.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A8C5BC92B770F3900619FE9 /* dress.usdz */; };
+		5A8C5BCD2B770F8700619FE9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BCC2B770F8700619FE9 /* Model.swift */; };
 		8A2DA4F82B766C7D006B4D46 /* ThriftMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA4F72B766C7D006B4D46 /* ThriftMeApp.swift */; };
 		8A2DA4FC2B766C7E006B4D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2DA4FB2B766C7E006B4D46 /* Assets.xcassets */; };
 		8A2DA4FF2B766C7E006B4D46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2DA4FE2B766C7E006B4D46 /* Preview Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		5A8C5BC12B76F5BA00619FE9 /* AccountButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountButton.swift; sourceTree = "<group>"; };
 		5A8C5BC32B770A0B00619FE9 /* InventoryCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryCarousel.swift; sourceTree = "<group>"; };
 		5A8C5BC62B770A6C00619FE9 /* InventoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItem.swift; sourceTree = "<group>"; };
+		5A8C5BC92B770F3900619FE9 /* dress.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = dress.usdz; sourceTree = "<group>"; };
+		5A8C5BCC2B770F8700619FE9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		8A2DA4F42B766C7D006B4D46 /* ThriftMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThriftMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2DA4F72B766C7D006B4D46 /* ThriftMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriftMeApp.swift; sourceTree = "<group>"; };
 		8A2DA4FB2B766C7E006B4D46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,6 +105,23 @@
 			path = AvatarView;
 			sourceTree = "<group>";
 		};
+		5A8C5BC82B770CEB00619FE9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5A8C5BBE2B76DB6400619FE9 /* Color.swift */,
+				5A8C5BCC2B770F8700619FE9 /* Model.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5A8C5BCB2B770F5400619FE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A8C5BC92B770F3900619FE9 /* dress.usdz */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8A2DA4EB2B766C7D006B4D46 = {
 			isa = PBXGroup;
 			children = (
@@ -120,16 +141,17 @@
 		8A2DA4F62B766C7D006B4D46 /* ThriftMe */ = {
 			isa = PBXGroup;
 			children = (
-				5A8C5BC52B770A1500619FE9 /* AvatarView */,
+				5A8C5BCB2B770F5400619FE9 /* Models */,
 				8A2DA4F72B766C7D006B4D46 /* ThriftMeApp.swift */,
-				8A2DA5112B768143006B4D46 /* LogIn */,
 				8A2DA5052B766CEA006B4D46 /* MainView.swift */,
+				8A2DA5112B768143006B4D46 /* LogIn */,
 				5A8C5BAD2B76DAB100619FE9 /* HomeView */,
+				5A8C5BC52B770A1500619FE9 /* AvatarView */,
 				8A2DA5072B766D29006B4D46 /* ChatView.swift */,
 				5A8C5BC02B76F09600619FE9 /* AccountView */,
 				8A2DA4FB2B766C7E006B4D46 /* Assets.xcassets */,
+				5A8C5BC82B770CEB00619FE9 /* Utils */,
 				8A2DA4FD2B766C7E006B4D46 /* Preview Content */,
-				5A8C5BBE2B76DB6400619FE9 /* Color.swift */,
 			);
 			path = ThriftMe;
 			sourceTree = "<group>";
@@ -211,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A8C5BCA2B770F3A00619FE9 /* dress.usdz in Resources */,
 				8A2DA4FF2B766C7E006B4D46 /* Preview Assets.xcassets in Resources */,
 				8A2DA4FC2B766C7E006B4D46 /* Assets.xcassets in Resources */,
 			);
@@ -223,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A8C5BCD2B770F8700619FE9 /* Model.swift in Sources */,
 				5A8C5BBB2B76DB1C00619FE9 /* BrandItem.swift in Sources */,
 				8A2DA5082B766D29006B4D46 /* ChatView.swift in Sources */,
 				8A2DA5102B767FD4006B4D46 /* LogInView.swift in Sources */,
