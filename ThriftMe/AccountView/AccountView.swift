@@ -49,7 +49,6 @@ struct AccountView: View {
                             .frame(width: 15, height: 15)
                     }.frame(height: 45)
                 }
-                Divider()
             }
             Spacer()
         }.padding(.all)
