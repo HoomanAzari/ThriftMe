@@ -16,6 +16,8 @@
 		5A8C5BBD2B76DB2000619FE9 /* BrandCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BBC2B76DB2000619FE9 /* BrandCarousel.swift */; };
 		5A8C5BBF2B76DB6400619FE9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BBE2B76DB6400619FE9 /* Color.swift */; };
 		5A8C5BC22B76F5BA00619FE9 /* AccountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BC12B76F5BA00619FE9 /* AccountButton.swift */; };
+		5A8C5BC42B770A0B00619FE9 /* InventoryCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BC32B770A0B00619FE9 /* InventoryCarousel.swift */; };
+		5A8C5BC72B770A6C00619FE9 /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C5BC62B770A6C00619FE9 /* InventoryItem.swift */; };
 		8A2DA4F82B766C7D006B4D46 /* ThriftMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA4F72B766C7D006B4D46 /* ThriftMeApp.swift */; };
 		8A2DA4FC2B766C7E006B4D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2DA4FB2B766C7E006B4D46 /* Assets.xcassets */; };
 		8A2DA4FF2B766C7E006B4D46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2DA4FE2B766C7E006B4D46 /* Preview Assets.xcassets */; };
@@ -39,6 +41,8 @@
 		5A8C5BBC2B76DB2000619FE9 /* BrandCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCarousel.swift; sourceTree = "<group>"; };
 		5A8C5BBE2B76DB6400619FE9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		5A8C5BC12B76F5BA00619FE9 /* AccountButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountButton.swift; sourceTree = "<group>"; };
+		5A8C5BC32B770A0B00619FE9 /* InventoryCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryCarousel.swift; sourceTree = "<group>"; };
+		5A8C5BC62B770A6C00619FE9 /* InventoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItem.swift; sourceTree = "<group>"; };
 		8A2DA4F42B766C7D006B4D46 /* ThriftMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThriftMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2DA4F72B766C7D006B4D46 /* ThriftMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriftMeApp.swift; sourceTree = "<group>"; };
 		8A2DA4FB2B766C7E006B4D46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +91,16 @@
 			path = AccountView;
 			sourceTree = "<group>";
 		};
+		5A8C5BC52B770A1500619FE9 /* AvatarView */ = {
+			isa = PBXGroup;
+			children = (
+				8A2DA50D2B767AC0006B4D46 /* AvatarView.swift */,
+				5A8C5BC32B770A0B00619FE9 /* InventoryCarousel.swift */,
+				5A8C5BC62B770A6C00619FE9 /* InventoryItem.swift */,
+			);
+			path = AvatarView;
+			sourceTree = "<group>";
+		};
 		8A2DA4EB2B766C7D006B4D46 = {
 			isa = PBXGroup;
 			children = (
@@ -106,11 +120,11 @@
 		8A2DA4F62B766C7D006B4D46 /* ThriftMe */ = {
 			isa = PBXGroup;
 			children = (
+				5A8C5BC52B770A1500619FE9 /* AvatarView */,
 				8A2DA4F72B766C7D006B4D46 /* ThriftMeApp.swift */,
 				8A2DA5112B768143006B4D46 /* LogIn */,
 				8A2DA5052B766CEA006B4D46 /* MainView.swift */,
 				5A8C5BAD2B76DAB100619FE9 /* HomeView */,
-				8A2DA50D2B767AC0006B4D46 /* AvatarView.swift */,
 				8A2DA5072B766D29006B4D46 /* ChatView.swift */,
 				5A8C5BC02B76F09600619FE9 /* AccountView */,
 				8A2DA4FB2B766C7E006B4D46 /* Assets.xcassets */,
@@ -220,9 +234,11 @@
 				5A8C5BBF2B76DB6400619FE9 /* Color.swift in Sources */,
 				8A2DA51F2B76D416006B4D46 /* SignUpView.swift in Sources */,
 				8A2DA5062B766CEA006B4D46 /* MainView.swift in Sources */,
+				5A8C5BC42B770A0B00619FE9 /* InventoryCarousel.swift in Sources */,
 				5A8C5BC22B76F5BA00619FE9 /* AccountButton.swift in Sources */,
 				5A8C5BB32B76DB0B00619FE9 /* ListingCarousel.swift in Sources */,
 				5A8C5BB72B76DB1500619FE9 /* CategoryItem.swift in Sources */,
+				5A8C5BC72B770A6C00619FE9 /* InventoryItem.swift in Sources */,
 				5A8C5BB12B76DB0600619FE9 /* ListingItem.swift in Sources */,
 				5A8C5BB52B76DB1200619FE9 /* HomeView.swift in Sources */,
 				8A2DA5172B768B06006B4D46 /* PasswordTextField.swift in Sources */,
