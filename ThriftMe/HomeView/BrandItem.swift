@@ -26,7 +26,7 @@ struct BrandItem: View {
                     .padding(.bottom, 2)
                     .padding(.top, -5)
             }.frame(width: 145, height: 100)
-                .background(Color(hexString: "D5D5D5"))
+                .background(Color(hexString: "#D5D5D5"))
         }
     }
 }

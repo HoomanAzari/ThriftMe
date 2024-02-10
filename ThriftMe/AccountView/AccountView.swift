@@ -17,7 +17,7 @@ struct AccountView: View {
             VStack {
                 AccountButton(iconName: "person", title: "Profile", description: "Username, Email, Password")
                 Divider()
-                AccountButton(iconName: "mappin.and.ellipse", title: "Location", description: "Country, City, and Currency")
+                AccountButton(iconName: "mappin.and.ellipse", title: "Location", description: "Country, City, Currency")
                 Divider()
                 AccountButton(iconName: "list.bullet", title: "My Listings", description: "Active sales")
                 Divider()
