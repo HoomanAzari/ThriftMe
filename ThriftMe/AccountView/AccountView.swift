@@ -9,12 +9,11 @@ import SwiftUI
 
 struct AccountView: View {
     var body: some View {
-
-        VStack(alignment: .leading) {
-            Text("Account")
-                .font(.title)
-                .bold()
-                .padding(.bottom, 25)
+            VStack(alignment: .leading) {
+                Text("Account")
+                    .font(.title)
+                    .bold()
+                    .padding(.bottom, 25)
             ScrollView{
                 VStack {
                     AccountButton(iconName: "person", title: "Profile", description: "Username, Email, Password")

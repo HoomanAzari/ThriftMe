@@ -10,7 +10,7 @@ import SwiftUI
 struct ListingItem: View {
     var listingImage: String
     var listingTitle: String
-    var listingPrice: Int
+    var listingPrice: Double
     var listingSeller: String
     var body: some View {
         Button {
@@ -19,7 +19,7 @@ struct ListingItem: View {
             VStack(alignment: .leading, spacing: 3) {
                 Image(listingImage)
                     .resizable()
-                    .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                    .aspectRatio(contentMode: .fill)
                     .frame(width: 115, height: 115)
                     .clipped()
                 Text(listingTitle)
@@ -27,7 +27,8 @@ struct ListingItem: View {
                     .font(.system(size: 12))
                     .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                     .lineLimit(2)
-                Text("$" + String(listingPrice))
+                    .padding(.horizontal, 10)
+                Text("$" + String(format: "%.2f", listingPrice))
                     .foregroundColor(.black)
                     .font(.system(size: 24))
                     .padding(.leading, 10)
