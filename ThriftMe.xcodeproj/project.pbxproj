@@ -34,6 +34,7 @@
 		8A2DA5172B768B06006B4D46 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA5162B768B06006B4D46 /* PasswordTextField.swift */; };
 		8A2DA5192B7690A0006B4D46 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA5182B7690A0006B4D46 /* WelcomeView.swift */; };
 		8A2DA51F2B76D416006B4D46 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA51E2B76D416006B4D46 /* SignUpView.swift */; };
+		8A3124792B775F17001D804C /* SpecificItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3124782B775F17001D804C /* SpecificItemView.swift */; };
 		AACCF6AD2B770B070089B98E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AACCF6AC2B770B070089B98E /* FirebaseAnalytics */; };
 		AACCF6AF2B770B070089B98E /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = AACCF6AE2B770B070089B98E /* FirebaseAnalyticsOnDeviceConversion */; };
 		AACCF6B12B770B070089B98E /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AACCF6B02B770B070089B98E /* FirebaseAnalyticsSwift */; };
@@ -70,6 +71,7 @@
 		8A2DA5162B768B06006B4D46 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		8A2DA5182B7690A0006B4D46 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		8A2DA51E2B76D416006B4D46 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		8A3124782B775F17001D804C /* SpecificItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				5A8C5BB42B76DB1200619FE9 /* HomeView.swift */,
 				5A8C5BB22B76DB0B00619FE9 /* ListingCarousel.swift */,
 				5A8C5BB02B76DB0600619FE9 /* ListingItem.swift */,
+				8A3124782B775F17001D804C /* SpecificItemView.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				5A8C5BC72B770A6C00619FE9 /* InventoryItem.swift in Sources */,
 				5A8C5BB12B76DB0600619FE9 /* ListingItem.swift in Sources */,
 				5A8C5BB52B76DB1200619FE9 /* HomeView.swift in Sources */,
+				8A3124792B775F17001D804C /* SpecificItemView.swift in Sources */,
 				8A2DA5172B768B06006B4D46 /* PasswordTextField.swift in Sources */,
 				8A2DA4F82B766C7D006B4D46 /* ThriftMeApp.swift in Sources */,
 			);

@@ -13,9 +13,6 @@ struct ListingItem: View {
     var listingPrice: Double
     var listingSeller: String
     var body: some View {
-        Button {
-            // Some action
-        } label: {
             VStack(alignment: .leading, spacing: 3) {
                 Image(listingImage)
                     .resizable()
@@ -39,7 +36,6 @@ struct ListingItem: View {
                     .font(.system(size: 12))
                     .bold()
             }.frame(width: 135, height: 200)
-        }
     }
 }
 

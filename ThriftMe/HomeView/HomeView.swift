@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     @State var query: String = ""
-    // @FocusState var queryBoxFocused: Bool
+    @State var sheetVisible: Bool = false
     var body: some View {
         VStack {
             HStack{
@@ -44,7 +44,7 @@ struct HomeView: View {
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 5) {
                                 ListingItem(listingImage: "p0", listingTitle: "Nike Men's White and Blue Hoodie", listingPrice: 25.00, listingSeller: "juhayedun")
-                                ListingItem(listingImage: "p1", listingTitle: "Marvel's Men's White T-Shirt", listingPrice: 15.00, listingSeller: "avaispiderman")
+                                ListingItem(listingImage: "p7", listingTitle: "Adidas Men's Green Trainers", listingPrice: 55.00, listingSeller: "al3jandro")
                                 ListingItem(listingImage: "p6", listingTitle: "Tommy Hilfiger Men's Jacket", listingPrice: 56.00, listingSeller: "JohnDoe")
                                 ListingItem(listingImage: "p2", listingTitle: "Vans Men's Black Trainers", listingPrice: 27.50, listingSeller: "rocketjb02")
                                 ListingItem(listingImage: "p3", listingTitle: "Blue jean jacket with side pockets", listingPrice: 15.00, listingSeller: "thriftinghands")
@@ -64,7 +64,7 @@ struct HomeView: View {
                         }
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 5) {
-                                ListingItem(listingImage: "p7", listingTitle: "Adidas Men's Green Trainers", listingPrice: 55.00, listingSeller: "al3jandro")
+                                ListingItem(listingImage: "p1", listingTitle: "Marvel's Men's White T-Shirt", listingPrice: 15.00, listingSeller: "avaispiderman").onTapGesture {sheetVisible = true}
                                 ListingItem(listingImage: "p8", listingTitle: "Nike Men's Purple Jacket", listingPrice: 32.50, listingSeller: "jackk2wackk")
                                 ListingItem(listingImage: "p9", listingTitle: "Adidas Men's Navy Joggers", listingPrice: 24.00, listingSeller: "roloovintage")
                                 ListingItem(listingImage: "p10", listingTitle: "Men's Black Cream Beanie", listingPrice: 10.00, listingSeller: "saint_4")
@@ -112,6 +112,9 @@ struct HomeView: View {
                     }.padding(.leading)
                 }
             }
+        }
+        .sheet(isPresented: $sheetVisible) {
+            SpecificItemView(sheetVisible: $sheetVisible)
         }
     }
 }
