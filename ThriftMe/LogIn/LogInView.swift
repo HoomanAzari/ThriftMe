@@ -4,19 +4,21 @@
 //
 //  Created by Houman Azari on 2024-02-09.
 //
-
 import SwiftUI
+import FirebaseAuth
 
 struct LogInView: View {
-    
     var bgColour: Color = Color(red: 91/255, green: 189/255, blue: 130/255)
-    @State var emailQuery: String = ""
-    @State var passwordQuery: String = ""
+    @State private var email: String = ""
+    @State private var password: String = ""
+    @State private var showingAlert = false
+    @State private var alertMessage: String?
+    @State private var isAuthenticated = false
     
     var body: some View {
         NavigationStack {
             ZStack {
-                bgColour.edgesIgnoringSafeArea(.all) // Set the background color for the entire screen
+                bgColour.edgesIgnoringSafeArea(.all)
                 
                 VStack {
                     HStack {
@@ -34,40 +36,59 @@ struct LogInView: View {
                         Text("Email")
                             .foregroundStyle(Color.white)
                             .bold()
-                        TextField("", text: $emailQuery)
+                        TextField("Email", text: $email)
                             .textFieldStyle(.roundedBorder)
                             .padding(.bottom, 35)
                         
                         Text("Password")
                             .foregroundStyle(Color.white)
                             .bold()
-                        PasswordTextFieldView("", text: $passwordQuery)
+                        SecureField("Password", text: $password)
+                            .textFieldStyle(.roundedBorder)
                             .padding(.bottom, 20)
                         
-                        NavigationLink {
-                            MainView()
-                        } label: {
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 15)
-                                    .foregroundStyle(Color.white)
-                                    .frame(height: 40)
-                                Text("Join Now")
-                                    .foregroundStyle(Color(red: 17/255, green: 134/255, blue: 119/255))
-                            }
+                        Button("Log In") {
+                            loginUser(email: email, password: password)
                         }
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .frame(height: 50)
+                        .foregroundColor(.white)
+                        .font(.system(size: 14, weight: .bold))
+                        .background(Color.blue)
+                        .cornerRadius(5)
                         .padding(.horizontal, 70)
-                        .padding()
+                        .padding(.top, 20)
+                        .alert("Login Error", isPresented: $showingAlert) {
+                            Button("OK", role: .cancel) { }
+                        } message: {
+                            Text(alertMessage ?? "An unknown error occurred.")
+                        }
                     }
-                    .padding(.horizontal, 50)
+                }
+            }
+            .navigationDestination(isPresented: $isAuthenticated) {
+                MainView()
+            }
+        }
+        .navigationBarHidden(true)
+    }
+    
+    func loginUser(email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+            DispatchQueue.main.async {
+                if let error = error {
+                    self.alertMessage = error.localizedDescription
+                    self.showingAlert = true
+                } else {
+                    print("User logged in successfully")
+                    self.isAuthenticated = true // Assuming you'll navigate or update UI based on this
                 }
             }
         }
-        .navigationBarHidden(true) // Hide the navigation bar on this view
     }
 }
 
-
-struct LogIn_Previews: PreviewProvider {
+struct LogInView_Previews: PreviewProvider {
     static var previews: some View {
         LogInView()
     }

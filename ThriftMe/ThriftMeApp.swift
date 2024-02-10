@@ -6,11 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
+
 
 @main
 struct ThriftMeApp: App {
     
+    init() {
+        FirebaseApp.configure()
+    }
+        
     @AppStorage("Login") var needsWelcome = true
+    
     var body: some Scene {
         WindowGroup {
             MainView()
